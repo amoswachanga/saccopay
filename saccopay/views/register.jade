@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1= title
+  p #{title}
+    table
+    form#formRegister(,='', name='register', action='./register', method='POST')
+        br
+        tr
+            td
+                label Number Plate
+            td
+                input#textNoPlate(,='', name='NoPlate', placeholder='Number Plate')
+        br
+        br
+        tr
+          label Driver Name
+        tr
+          input#textDriver(,='', name='Driver', placeholder="Driver's Name")
+        br
+        br
+        tr
+            button#btnSubmit(type="submit") submit
